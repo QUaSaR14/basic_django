@@ -1,0 +1,15 @@
+# Name   : Madhur Trivedi
+# RollNo : BT17CSE039
+
+* In this project we have defined a model named Contact(in models.py file), which has name,
+email, message which leads to creation of table named pages_contact with attributes as id,
+name, email, message in sqlite3 database.
+* Contact model is defined under app name pages
+* Ajax is triggered using jQuery
+* For CSS bootstrap is used
+* post method used for AJAX request
+* After clicking on Submit button function named 'submithandler' is called in which instead of submitting the form we are making an AJAX request where url contains the path where we want to post our data.
+* Here while doing an ajax request all attributes of data from form is taken and binded into understandable form to server and we are expecting a JSON response in return
+* Then in views.py file we are checking if the request is_ajax, we check if form is_vaid then return a JSON response with 'msg=success'
+* Back after response being 'success' from server side in contact.html file we are going to to give an alert message through a function named 'successFunction'.Then resetting the form.
+* We can run our form on url 'localhost:8000' we can see changes made to database on url:- localhost:8000/admin/pages/contact but before that you must have a staff user defined in your system
